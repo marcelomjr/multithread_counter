@@ -68,7 +68,7 @@ int main() {
     // Get the numbers and save them in inputs array
     get_inputs(inputs, &number_of_inputs);
     
-    // Crete all the threads
+    // Create all the threads
     for (int i = 0; i < MAX_THREAD_NUMBER; i++) {
         pthread_create(&threads_id[i], NULL, thread_routine, NULL);
     }
